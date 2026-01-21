@@ -11,11 +11,11 @@ To learn how data collection works in Linux when a script is executed. The goal 
 ## **Results:**
 I first created a server on Discord to receive all collected data. I then wrote a simple python script to run terminal commands. While it is executed nothing shows on the screen so the user does not suspect an attack. Then, I loaded the script onto the Kali machine and used the following command to run it.
 
-![Terminal screenshot]
+![Terminal screenshot](https://github.com/J1W00luv/data-stealer/blob/main/screenshots/scriptRunning.png)
 
 The results of the code were immediately sent to the discord server I created earlier.
 
-![Discord screenshot]
+![Discord screenshot](https://github.com/J1W00luv/data-stealer/blob/main/screenshots/discord.png)
 
 ## **Problems I had during execution:**
 
@@ -27,3 +27,4 @@ The results of the code were immediately sent to the discord server I created ea
 
 ## **Evaluation:**
 My script successfully collected data without the victim knowing and sent it to my server. It shows how easy it can be to gather data, by the use of social engineering, which attack heavily relies on. Discord servers using the HTTPS (trusted protocol) means that the firewall does not recognise the traffic malicious and does not stop it. This makes data exfiltration harder to detect. To prevent this type of attack a couple of mitigation strategies could be used, for example to acknowledge users (especially administrators) that they should not be running scripts unless it is absolutely necessary and it is trusted (or code source can be seen, like my python script). Or use Endpoint Detection & Response which is an advanced technology that allows traffic to be monitored and analysed for any suspicious behaviour, like, for example, a lot of commands being run and data sent out to the internet.
+
